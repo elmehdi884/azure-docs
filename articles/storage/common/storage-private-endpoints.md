@@ -153,6 +153,10 @@ You can copy blobs between storage accounts by using private endpoints only if y
 
 Only private endpoints that target the `blob` storage resource endpoint are supported.  This includes REST API calls against Data Lake Storage Gen2 accounts in which the `blob` resource endpoint is referenced explicitly or implicitly. Private endpoints that target the Data Lake Storage Gen2 `dfs` endpoint or the `file` resource endpoint are not yet supported. Copying between storage accounts by using the Network File System (NFS) protocol is not yet supported.
 
+### private endpoint connection name
+
+Clients can't set a custom name for private endpoint connection name for a private endpoint connected to storage account, it's generated automatically by Azure based on the resource and service it's connecting to, and it cannot be changed.
+
 ## Next steps
 
 - [Azure Private Endpoint DNS configuration](../../private-link/private-endpoint-dns.md)
